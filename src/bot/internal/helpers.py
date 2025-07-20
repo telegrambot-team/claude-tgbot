@@ -75,7 +75,7 @@ def get_logging_config(app_name: str):
         },
         "loggers": {
             "root": {
-                "level": "DEBUG",
+                "level": "INFO",
                 "handlers": ["stdout", "stderr", "file"],
             },
         },

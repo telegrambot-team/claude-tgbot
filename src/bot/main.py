@@ -47,7 +47,11 @@ async def main():
     dispatcher.include_routers(base_router, errors_router)
 
     logging.info("bot started")
-    await dispatcher.start_polling(bot)
+    try:
+        await dispatcher.start_polling(bot)
+    finally:
+        await db.dispose()
+        await redis_client.close()
 
 
 def run_main():

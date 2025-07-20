@@ -35,3 +35,30 @@ That's it — you're ready to build your own aiogram bot!
    ```bash
    bot-run
    ```
+
+## 🗂 Project Structure
+
+```
+src/
+├── bot/           # bot application code
+├── database/      # SQLAlchemy models and DB helpers
+└── tests/         # pytest tests
+```
+
+## 🛠 Database Migrations
+
+Use [Alembic](https://alembic.sqlalchemy.org/) for database schema management:
+
+```bash
+alembic upgrade head
+```
+
+## 🐳 Running with Docker
+
+To start the PostgreSQL service defined in `compose.yml`:
+
+```bash
+docker compose up -d
+```
+
+Then run the bot as described above.
