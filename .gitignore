@@ -252,4 +252,3 @@ share/
 /src/images/
 __pycache__
 .idea
-src/leadtgbot.egg-info
