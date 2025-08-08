@@ -25,6 +25,7 @@ dependencies = [
     "pydantic-settings>=2.9.1",
     "redis>=6.2.0",
     "sqlalchemy>=2.0.41",
+    "claude-code-sdk>=0.0.14",
 ]
 
 [project.optional-dependencies]
